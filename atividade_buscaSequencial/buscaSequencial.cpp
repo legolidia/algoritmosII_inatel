@@ -55,9 +55,9 @@ int main()
 
   buscaPorMatricula(2, alunos, 5);
   buscaPorNome("Taylor", alunos, 5);
-  buscaPorNota(7.0, alunos, 5);
+  cout << buscaPorNota(7.0, alunos, 5) << endl;
 
-  cin.get(); // Espera o usuário pressionar Enter antes de sair
+  cin.get();
 
   return 0;
 }
