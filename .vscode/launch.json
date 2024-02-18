@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/workspaces/algoritmosII_inatel/aula1",
-      "program": "/workspaces/algoritmosII_inatel/aula1/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "c:/Users/lidia/OneDrive/Área de Trabalho/inatel/algoritmos/algoritmosII_inatel/atividade_buscaSequencial",
+      "program": "c:/Users/lidia/OneDrive/Área de Trabalho/inatel/algoritmos/algoritmosII_inatel/atividade_buscaSequencial/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
