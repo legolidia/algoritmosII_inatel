@@ -9,6 +9,3 @@
 
 **2) Acesso de Memória**
     
-    -
-
-**3) Lala**
