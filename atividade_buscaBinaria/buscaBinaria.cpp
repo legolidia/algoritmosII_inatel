@@ -19,37 +19,22 @@ int busca_matricula(Aluno alunos[], int matricula_buscada, int tamanho)
 
     //3n
     while (inicio <= fim)
-    {   //6n
+    {   //5n
         int meio = (inicio + fim) / 2;
         //4n
         if (alunos[meio].matricula == matricula_buscada)
             return meio;
         //4n
         else if (alunos[meio].matricula < matricula_buscada)
+            //4n
             inicio = meio + 1;
         else
-            //4n
             fim = meio - 1;
     } 
 
     return -1;
    
-} //17n + 3 (u.t.)
-
-int busca_nota(Aluno alunos[], float nota_buscada, int tamanho)
-{
-    //1
-    int quantidade_alunos_abaixo_nota = 0;
-
-    //1 + 3n + 3n = 1 + 6n
-    for (int i = 0; i < tamanho; i++)
-        //4n
-        if (alunos[i].nota < nota_buscada)
-        //3n
-            quantidade_alunos_abaixo_nota++;
-    //1
-    return quantidade_alunos_abaixo_nota;
-} //13n + 3 (u.t.)
+} //1 + 3 + 3n + 5n + 4n + 4n + 4n = 20n + 4 
 
 int main()
 {
@@ -61,7 +46,6 @@ int main()
             {"Meredith", 4, 9.0},
             {"Benjamin", 5, 5.0}};
 
-    cout << busca_matricula(lista_alunos, 13, 5) << endl;
-    cout << busca_nota(lista_alunos, 7.0, 5) << endl;
+    cout << busca_matricula(lista_alunos, 2, 5) << endl;
 
 }
